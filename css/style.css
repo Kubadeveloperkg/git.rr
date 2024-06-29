@@ -1,0 +1,88 @@
+
+body{
+    background: black;
+}
+
+.box{
+    width: 130px;
+    height: 280px;
+    border-radius: 5px;
+    background: gray;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    justify-content: center;
+    animation: box-anim 4s linear ;
+}
+
+@keyframes box-anim{
+    0%{
+        transform: translateX(1300px);
+    }
+}
+
+.red{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background: rgb(0, 0, 0);
+    animation: red-anim 5s linear;
+}
+
+@keyframes red-anim{
+    0%{
+        background: black;
+    }
+    1%{
+        background: rgb(255, 0, 0);
+    }
+    100%{
+        background: rgb(255, 0, 0);
+    }
+}
+.yellow{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background: rgb(0, 0, 0);
+    animation: yellow-anim 5s linear 5s;
+}
+@keyframes yellow-anim{
+    0%{
+        background: black;
+    }
+    1%{
+        background: rgb(255, 255, 0);
+    }
+    100%{
+        background: rgb(183, 255, 0);
+    }
+}
+.green{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background: rgb(0, 0, 0);
+    animation: green-anim 10s ease 10s;
+}
+@keyframes green-anim{
+    0%{
+        background: black;
+    }
+    1%{
+        background: rgb(0, 255, 34);
+    }
+    70%{
+        background: black;
+    }
+    80%{
+        background: green;
+    }
+    90%{
+        background: rgb(0, 0, 0);
+    }
+    100%{
+        background: rgb(17, 255, 0);
+    }
+}
